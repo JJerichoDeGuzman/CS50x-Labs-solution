@@ -21,14 +21,32 @@ int main(){
     while (endPopu < startPopu ) {
          std::cout << "Enter at least: " << startPopu << " Llamas" << std::endl;  
          std::cin >> endPopu;
-
     }
-
 
 //Calculate the number of years required
 
+    int growthRate {startPopu / 3};
+    int declineRate {startPopu / 4};
+    int combinedRate { (startPopu + growthRate) - declineRate};    
 
-// Print the the final answer
+
+    // std::cout << combinedRate << std :: endl;
+    
+    int years {1};
+
+    while (combinedRate < endPopu){
+
+        int growthUpdater {combinedRate / 3};
+        int declineUpdater {combinedRate / 4};
+        combinedRate =  ( (combinedRate + growthUpdater ) - declineUpdater);
+        years++; 
+    
+    }
+
+    // Print the the final answer
+
+    std::cout << startPopu << " Llamas will grow into " << endPopu << " in " << years << " years" << std::endl;
+    
 
 
 
