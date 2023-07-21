@@ -1,23 +1,22 @@
 #include <iostream>
 
-
-int main(){
+int main (){
 
     int n {5};
-   
-   for (int i = 1 ; i <= n ; ++i)
-   {
-    for (int j = n ;  j > 0 ; --j )
+    for (int i = n ;i >= 1;--i)
     {
-        std::cout << "-";
-    }
-    for (int k = 1; k <= i; ++k)
-    {
-        std::cout << "#";
-    }
-    
-    std::cout << std::endl;
-   }
+        for ( int k = n ; k < 1; --k)
+        {
+            std::cout << "#";
+        }
+        for ( int j = 1 ; j < i ; ++j)
+        {
+            std::cout << "-";
+        }
 
-    return 0;
+    }
+
+
+
+    return 0; 
 }
