@@ -1,13 +1,14 @@
 #include <iostream>
 
 int main() {
-    int n {5};
+    int n = 11;
     for (int i = n; i >= 1; --i) {
-        for (int j = n; j > i; --j) {
-            std::cout << "-";
+        for (int k = n - i; k > 0; --k) {
+            std::cout << " ";
         }
-        for (int k = 1; k <= i; ++k) {
-            std::cout << "#";
+
+        for (int j = 1; j <= i; ++j) {
+            std::cout << i;
         }
         std::cout << std::endl;
     }
