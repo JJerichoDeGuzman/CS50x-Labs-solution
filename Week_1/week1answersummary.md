@@ -1,3 +1,8 @@
+
+
+
+### Pattern Printing
+
 #### Triangle Pattern 1 - Right Triangle Pattern (increasing)
 
 ```Cpp
