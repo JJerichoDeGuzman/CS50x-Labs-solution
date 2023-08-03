@@ -26,7 +26,5 @@ int main () {
 
     towerbuild(level);
 
-
-
     return 0;
 }
